@@ -19,10 +19,29 @@ module.exports = {
       },
       spacing: {
         18: '4.5rem',
+        26: '7.5rem',
         108: '27rem',
       },
       inset: {
         18: '4.5rem',
+      },
+      fontSize: {
+        '2hxl': '1.75rem',
+      },
+      animation: {
+        'one-shake': 'shake 1s linear',
+        'bounce-right': 'bounce-two 1.5s linear infinite',
+      },
+      keyframes: {
+        shake: {
+          '0%, 100%': { transform: 'rotate(0deg)' },
+          '25%': { transform: 'rotate(10deg)' },
+          '50%': { transform: 'rotate(-10deg)' },
+        },
+        'bounce-two': {
+          '0%, 100%': { transform: 'translateX(25%)' },
+          '50%': { transform: 'translateX(0)' },
+        },
       },
     },
   },
