@@ -1140,6 +1140,10 @@ html {
   margin-bottom: 0.75rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-24 {
   margin-bottom: 6rem;
 }
@@ -1303,6 +1307,10 @@ html {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1348,6 +1356,11 @@ html {
   border-color: rgb(27 91 49 / var(--tw-border-opacity));
 }
 
+.border-light-grey {
+  --tw-border-opacity: 1;
+  border-color: rgb(245 240 236 / var(--tw-border-opacity));
+}
+
 .bg-beige {
   --tw-bg-opacity: 1;
   background-color: rgb(220 193 171 / var(--tw-bg-opacity));
@@ -1370,6 +1383,10 @@ html {
 
 .fill-green {
   fill: #1B5B31;
+}
+
+.fill-light-grey {
+  fill: #F5F0EC;
 }
 
 .object-cover {
@@ -1413,6 +1430,10 @@ html {
 
 .pb-16 {
   padding-bottom: 4rem;
+}
+
+.pb-26 {
+  padding-bottom: 7.5rem;
 }
 
 .pb-40 {
@@ -1506,6 +1527,7 @@ html {
 
 body {
   color: #111;
+  font-family: 'Inter', sans-serif;
 }
 
 .after\:absolute::after {
@@ -1547,6 +1569,16 @@ body {
 .hover\:bg-green:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(27 91 49 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-light-grey:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 240 236 / var(--tw-bg-opacity));
+}
+
+.hover\:text-green:hover {
+  --tw-text-opacity: 1;
+  color: rgb(27 91 49 / var(--tw-text-opacity));
 }
 
 .hover\:text-light-grey:hover {
@@ -1594,7 +1626,7 @@ body {
 }
 
 .group:hover .group-hover\:animate-bounce-right {
-  animation: bounce-two 1.5s linear infinite;
+  animation: bounce-two 1s linear infinite;
 }
 
 @keyframes shake {
@@ -1613,6 +1645,10 @@ body {
 
 .group:hover .group-hover\:animate-one-shake {
   animation: shake 1s linear;
+}
+
+.group:hover .group-hover\:fill-green {
+  fill: #1B5B31;
 }
 
 .group:hover .group-hover\:fill-light-grey {
@@ -1696,6 +1732,10 @@ body {
     bottom: 0px;
   }
 
+  .lg\:left-0 {
+    left: 0px;
+  }
+
   .lg\:right-0 {
     right: 0px;
   }
@@ -1706,6 +1746,10 @@ body {
 
   .lg\:top-auto {
     top: auto;
+  }
+
+  .lg\:col-start-2 {
+    grid-column-start: 2;
   }
 
   .lg\:m-auto {
@@ -1726,6 +1770,10 @@ body {
 
   .lg\:h-auto {
     height: auto;
+  }
+
+  .lg\:h-full {
+    height: 100%;
   }
 
   .lg\:h-screen {
@@ -1762,8 +1810,17 @@ body {
     padding-right: 0px;
   }
 
+  .lg\:py-26 {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+
   .lg\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .lg\:pl-48 {
+    padding-left: 12rem;
   }
 
   .lg\:pl-8 {
@@ -1772,5 +1829,9 @@ body {
 
   .lg\:pr-48 {
     padding-right: 12rem;
+  }
+
+  .lg\:pr-8 {
+    padding-right: 2rem;
   }
 }

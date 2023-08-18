@@ -76,17 +76,19 @@ slider.innerHTML = slides
         <h1 class="text-4xl font-montserrat font-medium md:text-6xl lg:pr-48">${
           slide.title
         }</h1>
-        <p class="font-inter text-base mt-6 mb-9 md:mt-11 md:mb-18 lg:pr-48">${
+        <p class="text-base mt-6 mb-9 md:mt-11 md:mb-18 lg:pr-48">${
           slide.text
         }</p>
-        <button class="font-inter bg-green text-light-grey px-5 py-3 rounded-3xl mr-9 mb-4">Skontaktuj się z nami</button>
-        <button class="group font-inter border border-green text-green px-5 py-3 rounded-3xl hover:bg-green hover:text-light-grey duration-500">
-          <span class="flex items-center">Zobacz nasze realizacje
-            <svg class="ml-4 fill-green group-hover:fill-light-grey group-hover:animate-bounce" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"/>
-            </svg>
-          </span>
-        </button>
+        <a href="#kontakt"><button class="bg-green text-light-grey px-5 py-3 rounded-3xl mr-9 mb-4">Skontaktuj się z nami</button></a>
+        <a href="#realizacje">
+          <button class="group border border-green text-green px-5 py-3 rounded-3xl hover:bg-green hover:text-light-grey duration-500">
+            <span class="flex items-center">Zobacz nasze realizacje
+              <svg class="ml-4 fill-green group-hover:fill-light-grey group-hover:animate-bounce" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"/>
+              </svg>
+            </span>
+          </button>
+        </a>
       </div>
 
       <div class="order-1 h-80 md:h-108 lg:absolute lg:top-0 lg:right-0 lg:pl-8 lg:w-1/2 lg:h-screen">

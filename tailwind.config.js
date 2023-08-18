@@ -30,7 +30,7 @@ module.exports = {
       },
       animation: {
         'one-shake': 'shake 1s linear',
-        'bounce-right': 'bounce-two 1.5s linear infinite',
+        'bounce-right': 'bounce-two 1s linear infinite',
       },
       keyframes: {
         shake: {
