@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
     <title>Giard Design</title>
   </head>
   <body>
@@ -72,7 +76,7 @@
 
     <section id="intro" class="js-slider carousel w-full lg:min-h-screen bg-beige pb-16 lg:pb-0"></section>
 
-    <section id="oferta" class="w-full bg-light-grey pt-26 pb-40">
+    <section id="oferta" class="w-full bg-light-grey pt-16 md:pt-26 pb-20 md:pb-40">
       <div class="w-3/4 m-auto flex flex-col items-center justify-center">
         <div class="m-auto mb-24 lg:w-3/4 lg:pr-48">
           <p class="text-green text-xs">Oferta</p>
@@ -123,7 +127,7 @@
       </div>
     </section>
 
-    <section id="ofirmie" class="w-full bg-green pb-26 lg:py-26 text-light-grey relative">
+    <section id="ofirmie" class="w-full bg-green pb-16 md:pb-26 lg:py-26 text-light-grey relative">
       <div class="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:w-3/4 lg:m-auto">
           <div class="order-2 px-10 md:px-18 lg:px-0 lg:col-start-2">
             <div class="lg:pl-48">
@@ -150,6 +154,66 @@
       </div> 
     </section>
 
+    <section id="realizacje" class="js-masonry-section bg-beige w-full pt-16 md:pt-26 pb-5 relative after:absolute after:bottom-5 md:after:bottom-11 after:left-0 after:w-full after:h-1/2 after:bg-gradient-to-t after:from-beige">
+      <div class="w-3/4 m-auto">
+        <p class="text-green text-xs">Oferta</p>
+        <h2 class="mt-4 mb-18 font-medium font-montserrat text-4xl md:text-5xl">Nasze <span class="italic font-inter">projekty</span></h2>
+      </div>
+ 
+      <div class="grid js-grid-images h-1/2">
+        <a href="img/projects/1.jpg" data-fancybox="gallery" class="grid-item w-1/2 md:w-1/3">
+          <img class="w-full p-2 md:p-6" src="img/projects/1.jpg" alt="Photo">
+        </a>
+        <a href="img/projects/2.jpg" data-fancybox="gallery" class="grid-item w-1/2 md:w-1/3">
+          <img class="w-full p-2 md:p-6" src="img/projects/2.jpg" alt="Photo">
+        </a>
+        <a href="img/projects/3.jpg" data-fancybox="gallery" class="grid-item w-1/2 md:w-1/3">
+          <img class="w-full p-2 md:p-6" src="img/projects/3.jpg" alt="Photo">
+        </a>
+        <a href="img/projects/4.jpg" data-fancybox="gallery" class="grid-item w-1/2 md:w-1/3">
+          <img class="w-full p-2 md:p-6" src="img/projects/4.jpg" alt="Photo">
+        </a>
+        <a href="img/projects/5.jpg" data-fancybox="gallery" class="grid-item w-1/2 md:w-1/3">
+          <img class="w-full p-2 md:p-6" src="img/projects/5.jpg" alt="Photo">
+        </a>
+        <a href="img/projects/6.jpg" data-fancybox="gallery" class="grid-item w-1/2 md:w-1/3">
+          <img class="w-full p-2 md:p-6" src="img/projects/6.jpg" alt="Photo">
+        </a>
+        <a href="img/projects/7.jpg" data-fancybox="gallery" class="grid-item w-1/2 md:w-1/3">
+          <img class="w-full p-2 md:p-6" src="img/projects/7.jpg" alt="Photo">
+        </a>
+        <a href="img/projects/8.jpg" data-fancybox="gallery" class="grid-item w-1/2 md:w-1/3">
+          <img class="w-full p-2 md:p-6" src="img/projects/8.jpg" alt="Photo">
+        </a>
+        <a href="img/projects/9.jpg" data-fancybox="gallery" class="grid-item w-1/2 md:w-1/3">
+          <img class="w-full p-2 md:p-6" src="img/projects/9.jpg" alt="Photo">
+        </a>
+        <a href="img/projects/10.jpg" data-fancybox="gallery" class="grid-item w-1/2 md:w-1/3 hidden">
+          <img class="w-full p-2 md:p-6" src="img/projects/10.jpg" alt="Photo">
+        </a>
+        <a href="img/projects/11.jpg" data-fancybox="gallery" class="grid-item w-1/2 md:w-1/3 hidden">
+          <img class="w-full p-2 md:p-6" src="img/projects/11.jpg" alt="Photo">
+        </a>
+        <a href="img/projects/12.jpg" data-fancybox="gallery" class="grid-item w-1/2 md:w-1/3 hidden">
+          <img class="w-full p-2 md:p-6" src="img/projects/12.jpg" alt="Photo">
+        </a>
+        <a href="img/projects/13.jpg" data-fancybox="gallery" class="grid-item w-1/2 md:w-1/3 hidden">
+          <img class="w-full p-2 md:p-6" src="img/projects/13.jpg" alt="Photo">
+        </a>
+      </div>
+
+      <button class="js-load-more group absolute bottom-11 left-1/2 -translate-x-1/2   px-5 py-3 rounded-3xl border-dark-grey border hover:text-light-grey hover:bg-dark-grey duration-500 z-10">
+        <span class="flex items-center">Rozwiń
+          <svg class="ml-4 fill-dark-grey group-hover:fill-light-grey group-hover:animate-bounce" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z"/>
+          </svg>
+        </span>
+      </button>
+
+    </section>
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
