@@ -19,7 +19,9 @@ module.exports = {
         108: '27rem',
       },
       spacing: {
+        16: '3.75rem',
         18: '4.5rem',
+        25: '6.875rem',
         26: '7.5rem',
         108: '27rem',
       },
@@ -28,6 +30,7 @@ module.exports = {
       },
       fontSize: {
         '2hxl': '1.75rem',
+        '4hxl': '2.5rem',
       },
       animation: {
         'one-shake': 'shake 1s linear',

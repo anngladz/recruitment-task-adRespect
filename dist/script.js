@@ -118,12 +118,43 @@ slider.innerHTML = slides
 Fancybox.bind('[data-fancybox="gallery"]', {});
 
 // Masonry
-
 const masonrySection = document.querySelector('.js-masonry-section');
 const grid = document.querySelector('.js-grid-images');
 
-const masonry = new Masonry(grid, {
-  itemSelector: '.grid-item',
+const gridImages = [
+  '1.jpg',
+  '2.jpg',
+  '3.jpg',
+  '4.jpg',
+  '5.jpg',
+  '6.jpg',
+  '7.jpg',
+  '8.jpg',
+  '9.jpg',
+  '10.jpg',
+  '11.jpg',
+  '12.jpg',
+  '13.jpg',
+];
+
+grid.innerHTML = gridImages
+  .map(
+    (gridImage, index) => `
+<a href="img/projects/${gridImage}" data-fancybox="gallery" class="grid-item w-1/2 md:w-1/3 ${
+      index >= 9 ? 'hidden' : ''
+    }">
+<img class="w-full p-2 md:p-6" src="img/projects/${gridImage}" alt="Photo ${
+      index + 1
+    }">
+</a>
+`
+  )
+  .join('');
+
+imagesLoaded(grid, function () {
+  new Masonry(grid, {
+    itemSelector: '.grid-item',
+  });
 });
 
 const loadMoreButton = document.querySelector('.js-load-more');
@@ -137,5 +168,8 @@ loadMoreButton.addEventListener('click', () => {
 
   loadMoreButton.classList.add('hidden');
   masonrySection.classList.add('after:hidden');
-  masonry.layout();
+
+  new Masonry(grid, {
+    itemSelector: '.grid-item',
+  });
 });
