@@ -688,6 +688,34 @@ html {
   scroll-snap-align: end;
 }
 
+.footer {
+  display: grid;
+  width: 100%;
+  grid-auto-flow: row;
+  place-items: start;
+  row-gap: 2.5rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.footer > * {
+  display: grid;
+  place-items: start;
+  gap: 0.5rem;
+}
+
+@media (min-width: 48rem) {
+  .footer {
+    grid-auto-flow: column;
+  }
+
+  .footer-center {
+    grid-auto-flow: row dense;
+  }
+}
+
 .input {
   flex-shrink: 1;
   height: 3rem;
@@ -1107,14 +1135,6 @@ html {
   top: 20rem;
 }
 
-.bottom-20 {
-  bottom: 5rem;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -1135,10 +1155,6 @@ html {
   order: 2;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
 .m-0 {
   margin: 0px;
 }
@@ -1151,18 +1167,9 @@ html {
   margin: auto;
 }
 
-.m-16 {
-  margin: 3.75rem;
-}
-
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
-}
-
-.mx-32 {
-  margin-left: 8rem;
-  margin-right: 8rem;
 }
 
 .mb-10 {
@@ -1179,6 +1186,10 @@ html {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .mb-8 {
@@ -1237,20 +1248,24 @@ html {
   margin-top: auto;
 }
 
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
 .mr-16 {
   margin-right: 3.75rem;
 }
 
-.ml-16 {
-  margin-left: 3.75rem;
+.mt-26 {
+  margin-top: 7.5rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
+.mr-4 {
+  margin-right: 1rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .flex {
@@ -1333,18 +1348,6 @@ html {
   width: 100vw;
 }
 
-.w-auto {
-  width: auto;
-}
-
-.w-3\/5 {
-  width: 60%;
-}
-
-.w-4\/5 {
-  width: 80%;
-}
-
 .origin-right {
   transform-origin: right;
 }
@@ -1380,10 +1383,6 @@ html {
   flex-direction: column;
 }
 
-.content-center {
-  align-content: center;
-}
-
 .items-center {
   align-items: center;
 }
@@ -1396,10 +1395,6 @@ html {
   gap: 3.75rem;
 }
 
-.place-self-center {
-  place-self: center;
-}
-
 .self-start {
   align-self: flex-start;
 }
@@ -1410,6 +1405,10 @@ html {
 
 .self-center {
   align-self: center;
+}
+
+.justify-self-end {
+  justify-self: end;
 }
 
 .justify-self-center {
@@ -1432,6 +1431,10 @@ html {
   border-width: 1px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-dark-grey {
   --tw-border-opacity: 1;
   border-color: rgb(17 17 17 / var(--tw-border-opacity));
@@ -1450,6 +1453,11 @@ html {
 .bg-beige {
   --tw-bg-opacity: 1;
   background-color: rgb(220 193 171 / var(--tw-bg-opacity));
+}
+
+.bg-dark-grey {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 17 17 / var(--tw-bg-opacity));
 }
 
 .bg-green {
@@ -1517,9 +1525,9 @@ html {
   padding-bottom: 0.5rem;
 }
 
-.py-26 {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-3 {
@@ -1532,9 +1540,9 @@ html {
   padding-bottom: 1.5rem;
 }
 
-.px-25 {
-  padding-left: 6.875rem;
-  padding-right: 6.875rem;
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pb-16 {
@@ -1553,8 +1561,20 @@ html {
   padding-top: 3.75rem;
 }
 
-.text-center {
-  text-align: center;
+.pb-26 {
+  padding-bottom: 7.5rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .font-inter {
@@ -1569,8 +1589,9 @@ html {
   font-size: 1.75rem;
 }
 
-.text-4hxl {
-  font-size: 2.5rem;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-4xl {
@@ -1593,17 +1614,8 @@ html {
   line-height: 1rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .font-medium {
   font-weight: 500;
-}
-
-.font-normal {
-  font-weight: 400;
 }
 
 .italic {
@@ -1618,6 +1630,10 @@ html {
 .text-light-grey {
   --tw-text-opacity: 1;
   color: rgb(245 240 236 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .outline-none {
@@ -1749,6 +1765,10 @@ body {
   color: rgb(17 17 17 / var(--tw-text-opacity));
 }
 
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
 .group:hover .group-hover\:block {
   display: block;
 }
@@ -1831,16 +1851,28 @@ body {
     margin-left: 0.5rem;
   }
 
-  .md\:mt-11 {
-    margin-top: 2.75rem;
-  }
-
   .md\:ml-auto {
     margin-left: auto;
   }
 
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mt-11 {
+    margin-top: 2.75rem;
+  }
+
+  .md\:mr-16 {
+    margin-right: 3.75rem;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .md\:mt-26 {
+    margin-top: 7.5rem;
   }
 
   .md\:flex {
@@ -1867,17 +1899,8 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:justify-self-start {
     justify-self: start;
-  }
-
-  .md\:bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
   .md\:p-6 {
@@ -1894,44 +1917,19 @@ body {
     padding-right: 2rem;
   }
 
-  .md\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .md\:px-25 {
-    padding-left: 6.875rem;
-    padding-right: 6.875rem;
-  }
-
-  .md\:py-26 {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
-  }
-
-  .md\:px-16 {
-    padding-left: 3.75rem;
-    padding-right: 3.75rem;
-  }
-
   .md\:py-18 {
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
   }
 
-  .md\:py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
-
-  .md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .md\:pb-26 {
@@ -1946,6 +1944,18 @@ body {
     padding-top: 7.5rem;
   }
 
+  .md\:pb-16 {
+    padding-bottom: 3.75rem;
+  }
+
+  .md\:pt-16 {
+    padding-top: 3.75rem;
+  }
+
+  .md\:text-4hxl {
+    font-size: 2.5rem;
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1956,8 +1966,9 @@ body {
     line-height: 1;
   }
 
-  .md\:text-4hxl {
-    font-size: 2.5rem;
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .md\:after\:bottom-11::after {
@@ -2008,8 +2019,8 @@ body {
     margin-left: 0px;
   }
 
-  .lg\:ml-auto {
-    margin-left: auto;
+  .lg\:mr-16 {
+    margin-right: 3.75rem;
   }
 
   .lg\:flex {
@@ -2044,10 +2055,6 @@ body {
     width: 75%;
   }
 
-  .lg\:w-3\/5 {
-    width: 60%;
-  }
-
   .lg\:-translate-y-0 {
     --tw-translate-y: -0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2071,14 +2078,14 @@ body {
     padding-right: 0px;
   }
 
-  .lg\:py-26 {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
-  }
-
   .lg\:px-25 {
     padding-left: 6.875rem;
     padding-right: 6.875rem;
+  }
+
+  .lg\:py-26 {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
   }
 
   .lg\:pb-0 {
@@ -2099,5 +2106,10 @@ body {
 
   .lg\:pr-8 {
     padding-right: 2rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
